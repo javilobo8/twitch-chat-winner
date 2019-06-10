@@ -4,7 +4,7 @@ const axios = require('axios').default;
 const _ = require('lodash');
 const Handlebars = require('handlebars');
 
-const DEFAULT_WINNER_MESSAGE = `/me ————————————————————————— imGlitch Enhorabuena {{ winner }} has ganado! Escribe en el chat para recibir el premio! —————————————————————————`;
+const DEFAULT_WINNER_MESSAGE = `/me ——————————————————————— imGlitch Enhorabuena {{ winner }} has ganado! Escribe en el chat para recibir el premio! ———————————————————————`;
 
 const CHANNEL = process.env.TCW_CHANNEL || '#javilobo8';
 const NICK = process.env.TCW_NICK || 'javilobo8';
