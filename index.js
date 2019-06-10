@@ -115,7 +115,7 @@ class TwitchChatWinner {
       return;
     }
 
-    if (messageObject.text === COMMAND_TO_LISTEN) {
+    if (messageObject.isMod && messageObject.text === COMMAND_TO_LISTEN) {
       if (this.winnerTimeout) {
         return;
       }
