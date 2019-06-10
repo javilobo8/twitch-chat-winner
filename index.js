@@ -131,6 +131,11 @@ class TwitchChatWinner {
       } = response.data.chatters;
   
       const allViewers = viewers.concat(vips);
+
+      if (allViewers.length === 0) {
+        return;
+      }
+
       const winner = this.getRandomItem(allViewers);
 
       this.winner = String(winner).toLowerCase();
